@@ -1,0 +1,62 @@
+ .container ul li {
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  user-select: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  min-width: 15rem;
+  max-width: 25rem;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #8d3e3e;
+  transition: 0.2s;
+  color: rgb(249, 248, 249);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.container ul li:nth-child(odd) {
+  background: hsl(245, 45%, 38%);
+}
+
+.container ul li:hover {
+  color: black;
+  background: #c1cd59;
+}
+
+.completed {
+  color: #faf8f881;
+  text-decoration: line-through;
+}
+
+.completed::before {
+  content: '';
+  color: rgb(186, 170, 28);
+  position: absolute;
+  border-color: #5b619c;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-size: larger
+}
+
+.close:hover {
+  background-color: #f4433699;
+  color: white;
+  border: none;
+  border-radius:50%;
+}

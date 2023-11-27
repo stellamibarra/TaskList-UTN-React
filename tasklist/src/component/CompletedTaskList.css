@@ -1,0 +1,22 @@
+h2{
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem;
+    background-color: #00000069;
+    padding: 1rem;
+}
+li{
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    user-select: none;
+    transition: 0.2s;
+    color: rgb(212, 215, 225);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+aside li:nth-child(odd) {
+    margin-top: 3rem;
+}
